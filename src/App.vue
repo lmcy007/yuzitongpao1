@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <article0/>
-    <creation/>
+    <vindex/>
   </div>
-
 </template>
 
 <script>
-  import article0 from './components/article0'
-  import creation from './views/creation'
+  import vindex from './components/vindex'
   export default {
     name: 'app',
-    components: {article0, creation}
+    components: {vindex}
   }
 </script>
 <style scoped>
@@ -22,4 +19,3 @@
 
   }
 </style>
-

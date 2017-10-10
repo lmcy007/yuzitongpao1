@@ -10,7 +10,7 @@
         {{item.info}}
       </div>
       <img src="../assets/640.jpg" alt="配图1">
-      <img src= '${item.img}' alt="配图2">
+      <img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1301/11/c1/17314131_1357893305130.jpg" alt="配图2">
       <div>{{item.img}}</div>
     </div>
   </div>

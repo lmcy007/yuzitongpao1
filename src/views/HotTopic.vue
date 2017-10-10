@@ -2,7 +2,7 @@
   <div class="container">
     <div class="article" v-for="item in list" v-on:click="toggle(item)">
       <div class="title">
-        {{item.title}}
+        <a href="http://mp.weixin.qq.com/s/ZdRnAIqx7r19Knbjc6Cirw">{{item.title}}</a>
         <span class="time">{{item.time}}</span>
       </div>
       <div class="info"  v-show="!item.show">
