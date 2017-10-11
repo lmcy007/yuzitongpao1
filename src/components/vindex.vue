@@ -1,12 +1,16 @@
 <template>
   <div class="vindex">
-    <img src="../assets/2.png" alt="Readhub">
+  <div class="title">
+    <img style='vertical-align:middle'src="../assets/logo-2.jpg"  alt="Readhub">
     <div class="nav">
-      <router-link to="/">热门话题</router-link>
-      <router-link to="/TmtNews">TMT新闻</router-link>
-      <router-link to="/DeveloperInfo">开发者资讯</router-link>
-      <router-link to="/creation">原创文章</router-link>
+      <router-link to="/" style="text-decoration:none">同袍原创</router-link>
+      <router-link to="/TmtNews" style="text-decoration:none">军事新闻</router-link>
+      <router-link to="/DeveloperInfo" style="text-decoration:none">其他热点</router-link>
+      <router-link to="/">同袍原创</router-link>
+      <router-link to="/TmtNews">军事新闻</router-link>
+      <router-link to="/DeveloperInfo">其他热点</router-link>
     </div>
+  </div>
     <div class="line"></div>
     <backTop></backTop>
     <router-view></router-view>
@@ -29,21 +33,28 @@
     margin: 1% 0% 0% 1%;
 
      }
+  .title{
+    word-spacing: 1em;
+    text-align:justify;
+  }
  .nav{
    margin:0 auto;border:1px solid #fff;width:80%;height:200%;
    word-break:  keep-all;
    display:inline-block;
-   text-align:justify;
+   vertical-align:middle;
+   font-family: "黑体",黑体,Times New Roman;
    }
 
  .line{
-   margin:0,auto;width:inherit;heigh:1%;
-   border: 0.1em solid #f00;
-
+   margin:1em 0em auto;;width: inherit;heigh:inherit;
+   border:0.01em solid #cfcfcf;
  }
   .nav a{
-    font-family: "宋体",黑体,Times New Roman;
-    line-height:3em;
+    font-family: "新宋体",黑体,Times New Roman;
+    text-decoraction:none
+  }
+  a.router-link-exact-active{
+    font-weight: bold;
   }
 </style>
 

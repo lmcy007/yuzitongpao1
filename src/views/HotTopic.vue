@@ -2,12 +2,15 @@
   <div class="container">
     <div class="article" v-for="item in list" v-on:click="toggle(item)">
       <div class="title">
-        <a href="http://mp.weixin.qq.com/s/ZdRnAIqx7r19Knbjc6Cirw">{{item.title}}</a>
+        {{item.title}}
         <span class="time">{{item.time}}</span>
       </div>
       <div class="info"  v-show="!item.show">
         {{item.info}}
+        <div class="detail"><a href="http://mp.weixin.qq.com/s/ZdRnAIqx7r19Knbjc6Cirw">查看新闻</a>
+        </div>
       </div>
+
     </div>
   </div>
 </template>
@@ -87,6 +90,9 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
 }
+.title a{
+  text-decoration:none
+}
 .time{
   margin-left: 10px;
   font-size: 10px;
@@ -99,5 +105,8 @@ a {
   line-height: 1.8em;
   color: #aaacb4;
 }
-
+.detail{
+  text-align:right;
+  font-size:0.1em;
+}
 </style>
